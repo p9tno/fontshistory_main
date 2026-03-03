@@ -1,0 +1,108 @@
+.antiqueFonts {
+  padding: 0 0 7.7em;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .antiqueFonts .section__title {
+    position: relative;
+    font-size: 9.125em;
+    line-height: 0.73;
+    text-align: center;
+    margin: -0.07em 0 0;
+  }
+  .antiqueFonts .section__title em {
+    letter-spacing: -0.06em;
+  }
+  .antiqueFonts .section__title em:last-of-type {
+    position: relative;
+    z-index: 3;
+    display: block;
+    text-align: right;
+    padding-right: 0.25em;
+    padding-top: 0.05em;
+  }
+}
+.antiqueFonts .section__anchore {
+  padding-top: 0.1em;
+}
+.antiqueFonts .section__text {
+  padding-left: 10.75em;
+}
+.antiqueFonts__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.antiqueFonts__bg img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.antiqueFonts__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 3.7em;
+}
+.antiqueFonts__left {
+  width: 64.375em;
+  flex: none;
+}
+.antiqueFonts__img {
+  margin-top: -9em;
+  position: relative;
+}
+.antiqueFonts__img:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("img/antique-shadow.png") center no-repeat;
+  background-size: 70%;
+  z-index: -1;
+}
+.antiqueFonts__pattern {
+  position: absolute;
+  width: 48.1em;
+  top: -2.2em;
+  z-index: -1;
+}
+.antiqueFonts__portret {
+  width: 30.5625em;
+  margin-left: 9.7em;
+  position: relative;
+  z-index: 2;
+}
+.antiqueFonts__autograf {
+  position: absolute;
+  width: 28.7em;
+  left: 33.1em;
+  top: 20.4em;
+  z-index: 2;
+}
+.antiqueFonts__plates {
+  position: relative;
+  z-index: 4;
+  margin-top: 1.4em;
+  margin-left: 6.5em;
+}
+.antiqueFonts__plate {
+  position: absolute;
+  width: 23.5625em;
+  bottom: 0;
+}
+.antiqueFonts__plate:last-child {
+  left: 11.9375em;
+  bottom: -1.6em;
+}
+.antiqueFonts__right {
+  padding-top: 9em;
+  padding-right: 12.25em;
+}

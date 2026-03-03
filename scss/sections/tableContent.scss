@@ -1,0 +1,200 @@
+.tableContent {
+    @media (min-width: 768px) {
+        padding-top: 6em;
+        padding-bottom: 7.2em;
+    }
+    .section {
+        &__title {
+            text-align: center;
+            line-height: 0.7;
+            margin: 0 0 0.9em;
+
+            em,
+            i {
+                display: block;
+            }
+        }
+    }
+    .container_center {
+    }
+    &__list {
+        // margin-top: 3.7em;
+    }
+    &__row {
+        position: relative;
+        border-top: 1px solid #443e31;
+        display: flex;
+        // align-items: center;
+        gap: 2.5em;
+        padding: 0.2em;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('img/table-content-bg.jpg');
+            opacity: 0;
+            transition: opacity 0.8s;
+            z-index: -1;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+        }
+
+        &:first-child {
+            border-top: 0;
+            padding-left: 12.9em;
+
+            .tableContent {
+                &__img {
+                    right: 15.375em;
+                    width: 37.4375em;
+                }
+            }
+            &:hover {
+                .tableContent {
+                    &__img {
+                        transform: scale(1) translate(0, -9.625em);
+                    }
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            padding-left: 41.2em;
+
+            .tableContent {
+                &__img {
+                    right: 8.4375em;
+                    width: 101em;
+                }
+            }
+            &:hover {
+                .tableContent {
+                    &__img {
+                        transform: scale(1) translate(0, -16.25em);
+                    }
+                }
+            }
+        }
+
+        &:nth-child(3) {
+            padding-left: 22.2em;
+
+            .tableContent {
+                &__img {
+                    right: 14.25em;
+                    width: 95.1875em;
+                }
+            }
+            &:hover {
+                .tableContent {
+                    &__img {
+                        transform: scale(1) translate(0, -23.6875em);
+                    }
+                }
+            }
+        }
+
+        &:nth-child(4) {
+            padding-left: 60.1em;
+
+            .tableContent {
+                &__img {
+                    right: 13.625em;
+                    width: 99.625em;
+                }
+            }
+            &:hover {
+                .tableContent {
+                    &__img {
+                        transform: scale(1) translate(0, -25.0625em);
+                    }
+                }
+            }
+        }
+
+        &:nth-child(5) {
+            padding-left: 13.1em;
+
+            .tableContent {
+                &__img {
+                    right: 15.875em;
+                    width: 93.5em;
+                }
+            }
+            &:hover {
+                .tableContent {
+                    &__img {
+                        transform: scale(1) translate(0, -31.625em);
+                    }
+                }
+            }
+        }
+
+        &:nth-child(6) {
+            padding-left: 41.2em;
+
+            .tableContent {
+                &__img {
+                    right: 14.125em;
+                    width: 95.3125em;
+                }
+            }
+            &:hover {
+                .tableContent {
+                    &__img {
+                        transform: scale(1) translate(0, -42em);
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            z-index: 1;
+
+            &:before {
+                opacity: 1;
+            }
+            .tableContent {
+                &__text {
+                    color: #716a5e;
+                }
+                &__img {
+                    // z-index: 1;
+                    z-index: 2;
+                }
+            }
+        }
+    }
+    &__name {
+        font-weight: 'Mixed';
+        font-size: 4.125em;
+        letter-spacing: -0.06em;
+        color: #9b8d72;
+        line-height: 1.3;
+    }
+    &__text {
+        max-width: 18.75em;
+        line-height: 1.6;
+        transition: color 0.8s;
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        transition: transform 0.8s;
+        transform: scale(0) translate(-50%, -50%);
+    }
+}
