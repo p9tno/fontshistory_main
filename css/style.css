@@ -1482,6 +1482,7 @@ body {
 .fScreen__point:nth-child(9) {
   right: 12.4%;
   top: 38.6%;
+  display: none;
 }
 .fScreen__point:nth-child(10) {
   right: 5.7%;
@@ -1494,7 +1495,6 @@ body {
 .fScreen__point:nth-child(12) {
   right: 12.4%;
   top: 38.7%;
-  display: none;
 }
 .fScreen__point:nth-child(13) {
   right: 28.2%;
