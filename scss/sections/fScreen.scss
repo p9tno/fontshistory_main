@@ -1,0 +1,277 @@
+$color-border: #443e31;
+$color-gold: #9b8d72;
+$color-year: #887b63;
+$color-dot: #938365;
+
+.fScreen {
+    padding: 5.4em 0 0;
+
+    border-bottom: 1px solid $color-border;
+    text-align: center;
+
+    .section__title {
+        font-size: 17.1em;
+        position: relative;
+        margin: 0;
+     
+        .before__line,
+        .after__line {
+            position: absolute;
+            width: 100%;
+            border-top: 1px solid rgba(136,123,99,0.5);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .before__line {
+            top: 0.41em;
+        }
+
+        .after__line {
+            bottom: 0.222em;
+        }
+
+        .letter {
+            display: inline-block;
+        }
+
+        em .letter:first-child {
+            margin-right: -0.15em;
+            margin-left: -0.04em;
+        }
+    }
+
+    .section__sub {
+        font-family: "Archivo";
+        font-size: 1em;
+        text-transform: uppercase;
+        margin: 0 auto 4em;
+        letter-spacing: -0.02em;
+    }
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    &__map {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        &:before,
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+        }
+
+        &:before {
+            border: 1px solid $color-border;
+            left: calc(50% - 1px);
+            bottom: 0;
+            height: 9.375em;
+        }
+
+        &:after {
+            content: "I";
+            color: $color-gold;
+            border: 1px solid $color-border;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.29em;
+            height: 2.29em;
+            border-radius: 50%;
+            bottom: -1.145em;
+            left: 50%;
+            margin-left: -1.145em;
+            font-size: 1.25em;
+        }
+    }
+
+    &__year {
+        text-align: center;
+        left: -1em;
+        width: 2em;
+        opacity: 0;
+        font-size: 3em;
+        position: absolute;
+        bottom: 0.8em;
+        color: $color-year;
+        transition: 0.8s;
+        transition-property: opacity,transform;
+        transform: scale(0.3) translateY(1.8em);
+
+        .active & {
+            transform: scale(1) translateY(0);
+            opacity: 1;
+        }
+    }
+
+    &__round {
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: -3.4375em;
+        width: 6.875em;
+        height: 6.875em;
+        border-radius: 50%;
+        overflow: hidden;
+        bottom: 2em;
+        transform: scale(1) translateY(0);
+        transition: 0.8s;
+        transition-property: opacity,transform;
+
+        .active & {
+            transform: scale(0.3) translateY(6.875em);
+            opacity: 0;
+        }
+
+        img {
+            display: block;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__point {
+        position: absolute;
+        text-align: center;
+
+        &:after {
+            content: "";
+            display: inline-block;
+            background: $color-dot;
+            width: 0.375em;
+            height: 0.375em;
+            border-radius: 50%;
+        }
+
+
+        $special-points: 1, 2, 8, 9, 13, 15;
+        @each $point in $special-points {
+            &:nth-child(#{$point}) {
+                .fScreen__round {
+                    left: -2.1875em;
+                    width: 4.375em;
+                    height: 4.375em;
+                }
+
+                .fScreen__year {
+                    font-size: 1.75em;
+                }
+            }
+        }
+
+        @each $point in $special-points {
+            &.active:nth-child(#{$point}) {
+                .fScreen__year {
+                    opacity: 0.5;
+                }
+            }
+        }
+        &:first-child {
+            top: 25.1%;
+            left: 2.9%;
+        }
+
+        &:nth-child(2) {
+            top: 13.2%;
+            left: 8.9%;
+        }
+
+        &:nth-child(3) {
+            top: 24.9%;
+            left: 20%;
+        }
+
+        &:nth-child(4) {
+            top: 38.6%;
+            left: 14.2%;
+        }
+
+        &:nth-child(5) {
+            top: 45.6%;
+            left: 26.4%;
+        }
+
+        &:nth-child(6) {
+            top: 56.6%;
+            left: 4.9%;
+        }
+
+        &:nth-child(7) {
+            top: 58.9%;
+            left: 18.3%;
+        }
+
+        &:nth-child(8) {
+            top: 68.4%;
+            left: 28.8%;
+        }
+
+        &:nth-child(9) {
+            right: 12.4%;
+            top: 38.6%;
+        }
+
+        &:nth-child(10) {
+            right: 5.7%;
+            top: 28.7%;
+        }
+
+        &:nth-child(11) {
+            right: 23%;
+            top: 25.3%;
+        }
+
+        &:nth-child(12) {
+            right: 12.4%;
+            top: 38.7%;
+            display: none;
+        }
+
+        &:nth-child(13) {
+            right: 28.2%;
+            top: 39.7%;
+        }
+
+        &:nth-child(14) {
+            right: 17.9%;
+            top: 58.5%;
+        }
+
+        &:nth-child(15) {
+            right: 6.2%;
+            top: 64%;
+        }
+
+        &:nth-child(16) {
+            right: 25.9%;
+            top: 67%;
+        }
+    }
+
+    &__content {
+        position: relative;
+        padding: 7em 0 7.5em;
+        margin-top: -3.8em;
+    }
+
+    &__img {
+        width: 36.625em;
+        height: 39.375em;
+        margin: auto;
+    }
+}

@@ -1,0 +1,44 @@
+.header {
+    position: absolute;
+    z-index: 10;
+    
+    width: 100%;
+    padding: 3.15em 0;
+    
+    text-transform: uppercase;
+    color: $main_color;
+    font-family: "Archivo";
+    letter-spacing: -0.02em;
+
+    &__content {
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        max-width: 114.25em;
+        min-height: 2.625em;
+        padding: 0 2em;
+        margin-left: auto;
+        margin-right: auto;
+
+        > * {
+            width: 33.3%;
+            text-align: center;
+
+            &:first-child {
+                text-align: left;
+            }
+
+            &:last-child {
+                text-align: right;
+            }
+        }
+
+    }
+
+    a {
+        color: inherit;
+        text-decoration-color: transparent;
+    }
+}
+
+

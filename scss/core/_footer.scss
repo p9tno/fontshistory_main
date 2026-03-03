@@ -1,0 +1,53 @@
+/* Footer
+ ----------------------------------------------------------------------------- */
+.footer {
+	position: relative;
+	padding: 4em 0;
+	// background-color: #ddd;
+	// border-top: 1px solid rgba($color_withe, 0.1);
+
+	&__content {
+		@extend .container_center;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__soc {
+		font-size: 2em;
+
+		.menu-item {
+			margin-right: 0.7em;
+		}
+
+		a {
+			opacity: 0.5;
+
+			&:before {
+				display: none;
+			}
+
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+	}
+
+	&__copy {
+		font-size: 1.125em;
+	}
+
+	&__terms {
+		font-size: 1.125em;
+
+		a {
+			color: #B3B3B3;
+			text-decoration-color: transparent;
+			margin-left: 3em;
+
+			&:hover {
+				text-decoration-color: inherit;
+			}
+		}
+	}
+}

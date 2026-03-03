@@ -1,0 +1,117 @@
+// Main wrappers =====================================
+
+body {
+	display: flex;
+	flex-direction: column;
+	font-size: calc(.034 * 100vw + 0px);
+	height: auto;
+	min-height: 100%;
+	background: $color_black;
+	font-family: $main_font_family;
+    color: $main_color;
+    line-height: $main_line_height;
+
+	@media (min-width: 768px) {
+		font-size: calc(.00833334 * 100vw + 0px);
+	}
+}
+
+.main {
+	flex-grow: 1;
+}
+
+.container_center {
+	max-width: $container_width;
+	padding: 0 2em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.desktop {
+	@media (max-width: 767px) {
+		display: none !important;
+	}
+}
+
+.mobile {
+	@media (min-width: 768px) {
+		display: none !important;
+	}
+}
+
+.section {
+    position: relative;
+    padding: 5.125em 0;
+
+    &_light {
+        background: #f9f5ed;
+        color: #363127;
+    }
+
+    &__title {
+        font-family: $title_font_family;
+        font-weight: 400;
+        font-size: 5.1em;
+        margin: 0 0 0.484em;
+        letter-spacing: 0.175em;
+        line-height: 1.11;
+        color: #9b8d72;
+        letter-spacing: -0.06em;
+    }
+
+    &__sub {
+        font-size: 1.5em;
+        line-height: 1.5;
+        margin-bottom: 1em;
+    }
+
+    &__anchore {
+        font-family: "Archivo";
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #99896a;
+        font-size: 0.875em;
+        float: left;
+        margin-right: 5em;
+        margin-top: 0.7em;
+        line-height: 1.3;
+    }
+
+    &__except {
+        font-family: "Playfair Display";
+        font-size: 2.25em;
+        line-height: 1.1;
+        text-align: justify;
+        margin-bottom: 0.8em;
+
+        p {
+            margin: 0;
+        }
+    }
+
+
+    &__text {
+        line-height: 1.6;
+    }
+
+    .letter {
+        display: inline-block;
+    }
+
+    em,
+    i {
+        font-style: italic;
+        font-family: "Ogg";
+        letter-spacing: -0.1em;
+
+    }
+}
+
+.img {
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

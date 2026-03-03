@@ -1,0 +1,33 @@
+block variable
+    -var path = '';
+    //- -var page = true;
+    //- -var pageClass = 'bg';
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Fontshistory
+        link(rel="stylesheet", type="text/css", href=path +"css/swiper-bundle.min.css")
+        link(rel="stylesheet", type="text/css", href=path + "css/style.css")
+    body
+
+        include header.pug
+
+        main.main
+            block content
+
+        include footer.pug
+
+        //- //- begin toTop
+        //- .toTop
+        //-     a(href="#wrapper") 
+        //-         i.icon_to_top
+
+        //- //- end to
+
+        //- include modal.pug
+
+        include scripts.pug

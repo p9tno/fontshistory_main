@@ -1,0 +1,1567 @@
+@font-face {
+  font-family: "Felidae";
+  src: url("fonts/Felidae-Regular.woff2") format("woff2"), url("fonts/Felidae-Regular.woff") format("woff"), url("fonts/Felidae-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Haigrast Serif";
+  src: url("fonts/HaigrastSerif-Regular.woff2") format("woff2"), url("fonts/HaigrastSerif-Regular.woff") format("woff"), url("fonts/HaigrastSerif-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Impact";
+  src: url("fonts/Impact.woff2") format("woff2"), url("fonts/Impact.woff") format("woff"), url("fonts/Impact.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ShellyAllegroC";
+  src: url("fonts/ShellyAllegroC.woff2") format("woff2"), url("fonts/ShellyAllegroC.woff") format("woff"), url("fonts/ShellyAllegroC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Kelpo";
+  src: url("fonts/Kelpo.woff2") format("woff2"), url("fonts/Kelpo.woff") format("woff"), url("fonts/Kelpo.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FONTSPRING DEMO - Apparel Display Black It";
+  src: url("fonts/FONTSPRINGDEMO-ApparelDisplayBlackItRegular.woff2") format("woff2"), url("fonts/FONTSPRINGDEMO-ApparelDisplayBlackItRegular.woff") format("woff"), url("fonts/FONTSPRINGDEMO-ApparelDisplayBlackItRegular.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FONTSPRING DEMO - Apparel Bold It";
+  src: url("fonts/FONTSPRINGDEMO-ApparelBoldItRegular.woff2") format("woff2"), url("fonts/FONTSPRINGDEMO-ApparelBoldItRegular.woff") format("woff"), url("fonts/FONTSPRINGDEMO-ApparelBoldItRegular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Anglecia Pro Txt";
+  src: url("fonts/AngleciaProText-Regular.woff2") format("woff2"), url("fonts/AngleciaProText-Regular.woff") format("woff"), url("fonts/AngleciaProText-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FONTSPRING DEMO - Apparel Thin It";
+  src: url("fonts/FONTSPRINGDEMO-ApparelThinItRegular.woff2") format("woff2"), url("fonts/FONTSPRINGDEMO-ApparelThinItRegular.woff") format("woff"), url("fonts/FONTSPRINGDEMO-ApparelThinItRegular.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Anglecia Pro Tit";
+  src: url("fonts/AngleciaProTitle-Regular.woff2") format("woff2"), url("fonts/AngleciaProTitle-Regular.woff") format("woff"), url("fonts/AngleciaProTitle-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FONTSPRING DEMO - Apparel Display";
+  src: url("fonts/FONTSPRINGDEMO-ApparelDisplayRegular.woff2") format("woff2"), url("fonts/FONTSPRINGDEMO-ApparelDisplayRegular.woff") format("woff"), url("fonts/FONTSPRINGDEMO-ApparelDisplayRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Anglecia Pro Dsp";
+  src: url("fonts/AngleciaProDisplay-Italic.woff2") format("woff2"), url("fonts/AngleciaProDisplay-Italic.woff") format("woff"), url("fonts/AngleciaProDisplay-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Anglecia Pro Txt";
+  src: url("fonts/AngleciaProText-Italic.woff2") format("woff2"), url("fonts/AngleciaProText-Italic.woff") format("woff"), url("fonts/AngleciaProText-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FONTSPRING DEMO - Apparel Black It";
+  src: url("fonts/FONTSPRINGDEMO-ApparelBlackItRegular.woff2") format("woff2"), url("fonts/FONTSPRINGDEMO-ApparelBlackItRegular.woff") format("woff"), url("fonts/FONTSPRINGDEMO-ApparelBlackItRegular.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FONTSPRING DEMO - Apparel";
+  src: url("fonts/FONTSPRINGDEMO-ApparelBlackRegular.woff2") format("woff2"), url("fonts/FONTSPRINGDEMO-ApparelBlackRegular.woff") format("woff"), url("fonts/FONTSPRINGDEMO-ApparelBlackRegular.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FONTSPRING DEMO - Apparel";
+  src: url("fonts/FONTSPRINGDEMO-ApparelRegular.woff2") format("woff2"), url("fonts/FONTSPRINGDEMO-ApparelRegular.woff") format("woff"), url("fonts/FONTSPRINGDEMO-ApparelRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FONTSPRING DEMO - Apparel Display Light It";
+  src: url("fonts/FONTSPRINGDEMO-ApparelDisplayLightItRegular.woff2") format("woff2"), url("fonts/FONTSPRINGDEMO-ApparelDisplayLightItRegular.woff") format("woff"), url("fonts/FONTSPRINGDEMO-ApparelDisplayLightItRegular.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dahlia";
+  src: url("fonts/Dahlia-Regular.woff2") format("woff2"), url("fonts/Dahlia-Regular.woff") format("woff"), url("fonts/Dahlia-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FONTSPRING DEMO - Apparel Display It";
+  src: url("fonts/FONTSPRINGDEMO-ApparelDisplayItRegular.woff2") format("woff2"), url("fonts/FONTSPRINGDEMO-ApparelDisplayItRegular.woff") format("woff"), url("fonts/FONTSPRINGDEMO-ApparelDisplayItRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FONTSPRING DEMO - Apparel";
+  src: url("fonts/FONTSPRINGDEMO-ApparelBoldRegular.woff2") format("woff2"), url("fonts/FONTSPRINGDEMO-ApparelBoldRegular.woff") format("woff"), url("fonts/FONTSPRINGDEMO-ApparelBoldRegular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Anglecia Pro Dsp";
+  src: url("fonts/AngleciaProDisplay-Regular.woff2") format("woff2"), url("fonts/AngleciaProDisplay-Regular.woff") format("woff"), url("fonts/AngleciaProDisplay-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dahlia";
+  src: url("fonts/Dahlia-Medium.woff2") format("woff2"), url("fonts/Dahlia-Medium.woff") format("woff"), url("fonts/Dahlia-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FONTSPRING DEMO - Apparel Display";
+  src: url("fonts/FONTSPRINGDEMO-ApparelDisplayLightRegular.woff2") format("woff2"), url("fonts/FONTSPRINGDEMO-ApparelDisplayLightRegular.woff") format("woff"), url("fonts/FONTSPRINGDEMO-ApparelDisplayLightRegular.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FONTSPRING DEMO - Apparel";
+  src: url("fonts/FONTSPRINGDEMO-ApparelThinRegular.woff2") format("woff2"), url("fonts/FONTSPRINGDEMO-ApparelThinRegular.woff") format("woff"), url("fonts/FONTSPRINGDEMO-ApparelThinRegular.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dahlia Condensed";
+  src: url("fonts/Dahlia-RegularCondensed.woff2") format("woff2"), url("fonts/Dahlia-RegularCondensed.woff") format("woff"), url("fonts/Dahlia-RegularCondensed.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FONTSPRING DEMO - Apparel It";
+  src: url("fonts/FONTSPRINGDEMO-ApparelItRegular.woff2") format("woff2"), url("fonts/FONTSPRINGDEMO-ApparelItRegular.woff") format("woff"), url("fonts/FONTSPRINGDEMO-ApparelItRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FONTSPRING DEMO - Apparel Light It";
+  src: url("fonts/FONTSPRINGDEMO-ApparelLightItRegular.woff2") format("woff2"), url("fonts/FONTSPRINGDEMO-ApparelLightItRegular.woff") format("woff"), url("fonts/FONTSPRINGDEMO-ApparelLightItRegular.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dahlia";
+  src: url("fonts/Dahlia-bold.woff2") format("woff2"), url("fonts/Dahlia-bold.woff") format("woff"), url("fonts/Dahlia-bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FONTSPRING DEMO - Apparel";
+  src: url("fonts/FONTSPRINGDEMO-ApparelLightRegular.woff2") format("woff2"), url("fonts/FONTSPRINGDEMO-ApparelLightRegular.woff") format("woff"), url("fonts/FONTSPRINGDEMO-ApparelLightRegular.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dahlia Medium Condensed";
+  src: url("fonts/Dahlia-MediumCondensed.woff2") format("woff2"), url("fonts/Dahlia-MediumCondensed.woff") format("woff"), url("fonts/Dahlia-MediumCondensed.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FONTSPRING DEMO - Apparel Display";
+  src: url("fonts/FONTSPRINGDEMO-ApparelDisplayBlackRegular.woff2") format("woff2"), url("fonts/FONTSPRINGDEMO-ApparelDisplayBlackRegular.woff") format("woff"), url("fonts/FONTSPRINGDEMO-ApparelDisplayBlackRegular.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dahlia Bold Condensed";
+  src: url("fonts/Dahlia-BoldCondensed.woff2") format("woff2"), url("fonts/Dahlia-BoldCondensed.woff") format("woff"), url("fonts/Dahlia-BoldCondensed.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FONTSPRING DEMO - Apparel Display";
+  src: url("fonts/FONTSPRINGDEMO-ApparelDisplayBoldRegular.woff2") format("woff2"), url("fonts/FONTSPRINGDEMO-ApparelDisplayBoldRegular.woff") format("woff"), url("fonts/FONTSPRINGDEMO-ApparelDisplayBoldRegular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FONTSPRING DEMO - Apparel Display Bold It";
+  src: url("fonts/FONTSPRINGDEMO-ApparelDisplayBoldItRegular.woff2") format("woff2"), url("fonts/FONTSPRINGDEMO-ApparelDisplayBoldItRegular.woff") format("woff"), url("fonts/FONTSPRINGDEMO-ApparelDisplayBoldItRegular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly.woff2") format("woff2"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly.woff") format("woff"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_1.woff2") format("woff2"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_1.woff") format("woff"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_1.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_2.woff2") format("woff2"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_2.woff") format("woff"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_2.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_3.woff2") format("woff2"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_3.woff") format("woff"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_3.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_4.woff2") format("woff2"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_4.woff") format("woff"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_4.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_5.woff2") format("woff2"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_5.woff") format("woff"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_5.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_6.woff2") format("woff2"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_6.woff") format("woff"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_6.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_7.woff2") format("woff2"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_7.woff") format("woff"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_7.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_8.woff2") format("woff2"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_8.woff") format("woff"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_8.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_9.woff2") format("woff2"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_9.woff") format("woff"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_9.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_10.woff2") format("woff2"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_10.woff") format("woff"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_10.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_11.woff2") format("woff2"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_11.woff") format("woff"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_11.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_12.woff2") format("woff2"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_12.woff") format("woff"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_12.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_13.woff2") format("woff2"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_13.woff") format("woff"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_13.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_14.woff2") format("woff2"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_14.woff") format("woff"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_14.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_15.woff2") format("woff2"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_15.woff") format("woff"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_15.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_16.woff2") format("woff2"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_16.woff") format("woff"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_16.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_17.woff2") format("woff2"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_17.woff") format("woff"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_17.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_18.woff2") format("woff2"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_18.woff") format("woff"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_18.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_19.woff2") format("woff2"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_19.woff") format("woff"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_19.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_20.woff2") format("woff2"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_20.woff") format("woff"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_20.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_21.woff2") format("woff2"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_21.woff") format("woff"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_21.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_22.woff2") format("woff2"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_22.woff") format("woff"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_22.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_23.woff2") format("woff2"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_23.woff") format("woff"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_23.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_24.woff2") format("woff2"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_24.woff") format("woff"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_24.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_25.woff2") format("woff2"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_25.woff") format("woff"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_25.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_26.woff2") format("woff2"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_26.woff") format("woff"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_26.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_27.woff2") format("woff2"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_27.woff") format("woff"), url("fonts/CopyrightSharpTypeCoThisfontislicensedforwebuseonly_27.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-ExtraBoldItalic.woff2") format("woff2"), url("fonts/PlayfairDisplay-ExtraBoldItalic.woff") format("woff"), url("fonts/PlayfairDisplay-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-Italic.woff2") format("woff2"), url("fonts/PlayfairDisplay-Italic.woff") format("woff"), url("fonts/PlayfairDisplay-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-Black.woff2") format("woff2"), url("fonts/PlayfairDisplay-Black.woff") format("woff"), url("fonts/PlayfairDisplay-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-BlackItalic.woff2") format("woff2"), url("fonts/PlayfairDisplay-BlackItalic.woff") format("woff"), url("fonts/PlayfairDisplay-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-Regular.woff2") format("woff2"), url("fonts/PlayfairDisplay-Regular.woff") format("woff"), url("fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-SemiBoldItalic.woff2") format("woff2"), url("fonts/PlayfairDisplay-SemiBoldItalic.woff") format("woff"), url("fonts/PlayfairDisplay-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-Medium.woff2") format("woff2"), url("fonts/PlayfairDisplay-Medium.woff") format("woff"), url("fonts/PlayfairDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-SemiBold.woff2") format("woff2"), url("fonts/PlayfairDisplay-SemiBold.woff") format("woff"), url("fonts/PlayfairDisplay-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-ExtraBold.woff2") format("woff2"), url("fonts/PlayfairDisplay-ExtraBold.woff") format("woff"), url("fonts/PlayfairDisplay-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-Bold.woff2") format("woff2"), url("fonts/PlayfairDisplay-Bold.woff") format("woff"), url("fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-BoldItalic.woff2") format("woff2"), url("fonts/PlayfairDisplay-BoldItalic.woff") format("woff"), url("fonts/PlayfairDisplay-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-MediumItalic.woff2") format("woff2"), url("fonts/PlayfairDisplay-MediumItalic.woff") format("woff"), url("fonts/PlayfairDisplay-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("HelveticaNeueBoldCondensed.eot");
+  src: local("Helvetica Neue Condensed Bold"), local("HelveticaNeueBoldCondensed"), url("HelveticaNeueBoldCondensed.eot?#iefix") format("embedded-opentype"), url("HelveticaNeueBoldCondensed.woff2") format("woff2"), url("HelveticaNeueBoldCondensed.woff") format("woff"), url("HelveticaNeueBoldCondensed.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("HelveticaNeueBlackCondensed.eot");
+  src: local("Helvetica Neue Condensed Black"), local("HelveticaNeueBlackCondensed"), url("HelveticaNeueBlackCondensed.eot?#iefix") format("embedded-opentype"), url("HelveticaNeueBlackCondensed.woff2") format("woff2"), url("HelveticaNeueBlackCondensed.woff") format("woff"), url("HelveticaNeueBlackCondensed.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("fonts/HelveticaNeueCyr-Bold.eot");
+  src: local("HelveticaNeueCyr-Bold"), url("fonts/HelveticaNeueCyr-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueCyr-Bold.woff2") format("woff2"), url("fonts/HelveticaNeueCyr-Bold.woff") format("woff"), url("fonts/HelveticaNeueCyr-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("fonts/HelveticaNeueCyr-Light.eot");
+  src: local("HelveticaNeueCyr-Light"), url("fonts/HelveticaNeueCyr-Light.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueCyr-Light.woff2") format("woff2"), url("fonts/HelveticaNeueCyr-Light.woff") format("woff"), url("fonts/HelveticaNeueCyr-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("fonts/HelveticaNeueCyr-Medium.eot");
+  src: local("HelveticaNeueCyr-Medium"), url("fonts/HelveticaNeueCyr-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueCyr-Medium.woff2") format("woff2"), url("fonts/HelveticaNeueCyr-Medium.woff") format("woff"), url("fonts/HelveticaNeueCyr-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("fonts/HelveticaNeueCyr-MediumItalic.eot");
+  src: local("HelveticaNeueCyr-MediumItalic"), url("fonts/HelveticaNeueCyr-MediumItalic.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueCyr-MediumItalic.woff2") format("woff2"), url("fonts/HelveticaNeueCyr-MediumItalic.woff") format("woff"), url("fonts/HelveticaNeueCyr-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("fonts/HelveticaNeueCyr-LightItalic.eot");
+  src: local("HelveticaNeueCyr-LightItalic"), url("fonts/HelveticaNeueCyr-LightItalic.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueCyr-LightItalic.woff2") format("woff2"), url("fonts/HelveticaNeueCyr-LightItalic.woff") format("woff"), url("fonts/HelveticaNeueCyr-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("fonts/HelveticaNeueCyr-HeavyItalic.eot");
+  src: local("HelveticaNeueCyr-HeavyItalic"), url("fonts/HelveticaNeueCyr-HeavyItalic.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueCyr-HeavyItalic.woff2") format("woff2"), url("fonts/HelveticaNeueCyr-HeavyItalic.woff") format("woff"), url("fonts/HelveticaNeueCyr-HeavyItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("fonts/HelveticaNeueCyr-Black.eot");
+  src: local("HelveticaNeueCyr-Black"), url("fonts/HelveticaNeueCyr-Black.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueCyr-Black.woff2") format("woff2"), url("fonts/HelveticaNeueCyr-Black.woff") format("woff"), url("fonts/HelveticaNeueCyr-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("fonts/HelveticaNeueCyr-Heavy.eot");
+  src: local("HelveticaNeueCyr-Heavy"), url("fonts/HelveticaNeueCyr-Heavy.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueCyr-Heavy.woff2") format("woff2"), url("fonts/HelveticaNeueCyr-Heavy.woff") format("woff"), url("fonts/HelveticaNeueCyr-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("fonts/HelveticaNeueCyr-Italic.eot");
+  src: local("HelveticaNeueCyr-Italic"), url("fonts/HelveticaNeueCyr-Italic.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueCyr-Italic.woff2") format("woff2"), url("fonts/HelveticaNeueCyr-Italic.woff") format("woff"), url("fonts/HelveticaNeueCyr-Italic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("fonts/HelveticaNeueCyr-Roman.eot");
+  src: local("HelveticaNeueCyr-Roman"), url("fonts/HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueCyr-Roman.woff2") format("woff2"), url("fonts/HelveticaNeueCyr-Roman.woff") format("woff"), url("fonts/HelveticaNeueCyr-Roman.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("fonts/HelveticaNeueCyr-BlackItalic.eot");
+  src: local("HelveticaNeueCyr-BlackItalic"), url("fonts/HelveticaNeueCyr-BlackItalic.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueCyr-BlackItalic.woff2") format("woff2"), url("fonts/HelveticaNeueCyr-BlackItalic.woff") format("woff"), url("fonts/HelveticaNeueCyr-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("fonts/HelveticaNeueCyr-UltraLightItalic.eot");
+  src: local("HelveticaNeueCyr-UltraLightItalic"), url("fonts/HelveticaNeueCyr-UltraLightItalic.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueCyr-UltraLightItalic.woff2") format("woff2"), url("fonts/HelveticaNeueCyr-UltraLightItalic.woff") format("woff"), url("fonts/HelveticaNeueCyr-UltraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("fonts/HelveticaNeueCyr-BoldItalic.eot");
+  src: local("HelveticaNeueCyr-BoldItalic"), url("fonts/HelveticaNeueCyr-BoldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueCyr-BoldItalic.woff2") format("woff2"), url("fonts/HelveticaNeueCyr-BoldItalic.woff") format("woff"), url("fonts/HelveticaNeueCyr-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("fonts/HelveticaNeueCyr-ThinItalic.eot");
+  src: local("HelveticaNeueCyr-ThinItalic"), url("fonts/HelveticaNeueCyr-ThinItalic.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueCyr-ThinItalic.woff2") format("woff2"), url("fonts/HelveticaNeueCyr-ThinItalic.woff") format("woff"), url("fonts/HelveticaNeueCyr-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("fonts/HelveticaNeueCyr-UltraLight.eot");
+  src: local("HelveticaNeueCyr-UltraLight"), url("fonts/HelveticaNeueCyr-UltraLight.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueCyr-UltraLight.woff2") format("woff2"), url("fonts/HelveticaNeueCyr-UltraLight.woff") format("woff"), url("fonts/HelveticaNeueCyr-UltraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("fonts/HelveticaNeueCyr-Thin.eot");
+  src: local("HelveticaNeueCyr-Thin"), url("fonts/HelveticaNeueCyr-Thin.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueCyr-Thin.woff2") format("woff2"), url("fonts/HelveticaNeueCyr-Thin.woff") format("woff"), url("fonts/HelveticaNeueCyr-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Shlapak Script";
+  src: url("fonts/shlapak_script.eot");
+  /* IE 9 Compatibility Mode */
+  src: url("fonts/shlapak_script.eot?#iefix") format("embedded-opentype"), url("fonts/shlapak_script.woff2") format("woff2"), url("fonts/shlapak_script.woff") format("woff"), url("fonts/shlapak_script.ttf") format("truetype"), url("fonts/shlapak_script.svg#shlapak_script") format("svg");
+  /* Chrome < 4, Legacy iOS */
+}
+* {
+  box-sizing: border-box;
+}
+*:after, *:before {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  position: relative;
+  box-sizing: content-box;
+}
+
+.wrapper {
+  min-height: 100%;
+}
+
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0;
+  font-size: 100%;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+  transition: all 0.3s;
+}
+a:focus {
+  outline: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+  max-width: 100%;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+  outline: 0;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button, html [type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring,
+button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: calc(.034 * 100vw + 0px);
+  height: auto;
+  min-height: 100%;
+  background: #000000;
+  font-family: "Playfair Display";
+  color: #f9f5ed;
+  line-height: 1.2;
+}
+@media (min-width: 768px) {
+  body {
+    font-size: calc(.00833334 * 100vw + 0px);
+  }
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container_center, .footer__content {
+  max-width: 103.25em;
+  padding: 0 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 767px) {
+  .desktop {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile {
+    display: none !important;
+  }
+}
+
+.section {
+  position: relative;
+  padding: 5.125em 0;
+}
+.section_light {
+  background: #f9f5ed;
+  color: #363127;
+}
+.section__title {
+  font-family: "FONTSPRING DEMO - Apparel Display";
+  font-weight: 400;
+  font-size: 5.1em;
+  margin: 0 0 0.484em;
+  letter-spacing: 0.175em;
+  line-height: 1.11;
+  color: #9b8d72;
+  letter-spacing: -0.06em;
+}
+.section__sub {
+  font-size: 1.5em;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+.section__anchore {
+  font-family: "Archivo";
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #99896a;
+  font-size: 0.875em;
+  float: left;
+  margin-right: 5em;
+  margin-top: 0.7em;
+  line-height: 1.3;
+}
+.section__except {
+  font-family: "Playfair Display";
+  font-size: 2.25em;
+  line-height: 1.1;
+  text-align: justify;
+  margin-bottom: 0.8em;
+}
+.section__except p {
+  margin: 0;
+}
+.section__text {
+  line-height: 1.6;
+}
+.section .letter {
+  display: inline-block;
+}
+.section em,
+.section i {
+  font-style: italic;
+  font-family: "Ogg";
+  letter-spacing: -0.1em;
+}
+
+.img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  padding: 3.15em 0;
+  text-transform: uppercase;
+  color: #f9f5ed;
+  font-family: "Archivo";
+  letter-spacing: -0.02em;
+}
+.header__content {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 114.25em;
+  min-height: 2.625em;
+  padding: 0 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header__content > * {
+  width: 33.3%;
+  text-align: center;
+}
+.header__content > *:first-child {
+  text-align: left;
+}
+.header__content > *:last-child {
+  text-align: right;
+}
+.header a {
+  color: inherit;
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
+}
+
+.fScreen {
+  padding: 5.4em 0 0;
+  border-bottom: 1px solid #443e31;
+  text-align: center;
+}
+.fScreen .section__title {
+  font-size: 17.1em;
+  position: relative;
+  margin: 0;
+}
+.fScreen .section__title .before__line,
+.fScreen .section__title .after__line {
+  position: absolute;
+  width: 100%;
+  border-top: 1px solid rgba(136, 123, 99, 0.5);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.fScreen .section__title .before__line {
+  top: 0.41em;
+}
+.fScreen .section__title .after__line {
+  bottom: 0.222em;
+}
+.fScreen .section__title .letter {
+  display: inline-block;
+}
+.fScreen .section__title em .letter:first-child {
+  margin-right: -0.15em;
+  margin-left: -0.04em;
+}
+.fScreen .section__sub {
+  font-family: "Archivo";
+  font-size: 1em;
+  text-transform: uppercase;
+  margin: 0 auto 4em;
+  letter-spacing: -0.02em;
+}
+.fScreen__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.fScreen__map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.fScreen__map:before, .fScreen__map:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+.fScreen__map:before {
+  border: 1px solid #443e31;
+  left: calc(50% - 1px);
+  bottom: 0;
+  height: 9.375em;
+}
+.fScreen__map:after {
+  content: "I";
+  color: #9b8d72;
+  border: 1px solid #443e31;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.29em;
+  height: 2.29em;
+  border-radius: 50%;
+  bottom: -1.145em;
+  left: 50%;
+  margin-left: -1.145em;
+  font-size: 1.25em;
+}
+.fScreen__year {
+  text-align: center;
+  left: -1em;
+  width: 2em;
+  opacity: 0;
+  font-size: 3em;
+  position: absolute;
+  bottom: 0.8em;
+  color: #887b63;
+  transition: 0.8s;
+  transition-property: opacity, transform;
+  transform: scale(0.3) translateY(1.8em);
+}
+.active .fScreen__year {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}
+.fScreen__round {
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -3.4375em;
+  width: 6.875em;
+  height: 6.875em;
+  border-radius: 50%;
+  overflow: hidden;
+  bottom: 2em;
+  transform: scale(1) translateY(0);
+  transition: 0.8s;
+  transition-property: opacity, transform;
+}
+.active .fScreen__round {
+  transform: scale(0.3) translateY(6.875em);
+  opacity: 0;
+}
+.fScreen__round img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.fScreen__point {
+  position: absolute;
+  text-align: center;
+}
+.fScreen__point:after {
+  content: "";
+  display: inline-block;
+  background: #938365;
+  width: 0.375em;
+  height: 0.375em;
+  border-radius: 50%;
+}
+.fScreen__point:nth-child(1) .fScreen__round {
+  left: -2.1875em;
+  width: 4.375em;
+  height: 4.375em;
+}
+.fScreen__point:nth-child(1) .fScreen__year {
+  font-size: 1.75em;
+}
+.fScreen__point:nth-child(2) .fScreen__round {
+  left: -2.1875em;
+  width: 4.375em;
+  height: 4.375em;
+}
+.fScreen__point:nth-child(2) .fScreen__year {
+  font-size: 1.75em;
+}
+.fScreen__point:nth-child(8) .fScreen__round {
+  left: -2.1875em;
+  width: 4.375em;
+  height: 4.375em;
+}
+.fScreen__point:nth-child(8) .fScreen__year {
+  font-size: 1.75em;
+}
+.fScreen__point:nth-child(9) .fScreen__round {
+  left: -2.1875em;
+  width: 4.375em;
+  height: 4.375em;
+}
+.fScreen__point:nth-child(9) .fScreen__year {
+  font-size: 1.75em;
+}
+.fScreen__point:nth-child(13) .fScreen__round {
+  left: -2.1875em;
+  width: 4.375em;
+  height: 4.375em;
+}
+.fScreen__point:nth-child(13) .fScreen__year {
+  font-size: 1.75em;
+}
+.fScreen__point:nth-child(15) .fScreen__round {
+  left: -2.1875em;
+  width: 4.375em;
+  height: 4.375em;
+}
+.fScreen__point:nth-child(15) .fScreen__year {
+  font-size: 1.75em;
+}
+.fScreen__point.active:nth-child(1) .fScreen__year {
+  opacity: 0.5;
+}
+.fScreen__point.active:nth-child(2) .fScreen__year {
+  opacity: 0.5;
+}
+.fScreen__point.active:nth-child(8) .fScreen__year {
+  opacity: 0.5;
+}
+.fScreen__point.active:nth-child(9) .fScreen__year {
+  opacity: 0.5;
+}
+.fScreen__point.active:nth-child(13) .fScreen__year {
+  opacity: 0.5;
+}
+.fScreen__point.active:nth-child(15) .fScreen__year {
+  opacity: 0.5;
+}
+.fScreen__point:first-child {
+  top: 25.1%;
+  left: 2.9%;
+}
+.fScreen__point:nth-child(2) {
+  top: 13.2%;
+  left: 8.9%;
+}
+.fScreen__point:nth-child(3) {
+  top: 24.9%;
+  left: 20%;
+}
+.fScreen__point:nth-child(4) {
+  top: 38.6%;
+  left: 14.2%;
+}
+.fScreen__point:nth-child(5) {
+  top: 45.6%;
+  left: 26.4%;
+}
+.fScreen__point:nth-child(6) {
+  top: 56.6%;
+  left: 4.9%;
+}
+.fScreen__point:nth-child(7) {
+  top: 58.9%;
+  left: 18.3%;
+}
+.fScreen__point:nth-child(8) {
+  top: 68.4%;
+  left: 28.8%;
+}
+.fScreen__point:nth-child(9) {
+  right: 12.4%;
+  top: 38.6%;
+}
+.fScreen__point:nth-child(10) {
+  right: 5.7%;
+  top: 28.7%;
+}
+.fScreen__point:nth-child(11) {
+  right: 23%;
+  top: 25.3%;
+}
+.fScreen__point:nth-child(12) {
+  right: 12.4%;
+  top: 38.7%;
+  display: none;
+}
+.fScreen__point:nth-child(13) {
+  right: 28.2%;
+  top: 39.7%;
+}
+.fScreen__point:nth-child(14) {
+  right: 17.9%;
+  top: 58.5%;
+}
+.fScreen__point:nth-child(15) {
+  right: 6.2%;
+  top: 64%;
+}
+.fScreen__point:nth-child(16) {
+  right: 25.9%;
+  top: 67%;
+}
+.fScreen__content {
+  position: relative;
+  padding: 7em 0 7.5em;
+  margin-top: -3.8em;
+}
+.fScreen__img {
+  width: 36.625em;
+  height: 39.375em;
+  margin: auto;
+}
+
+/* Footer
+ ----------------------------------------------------------------------------- */
+.footer {
+  position: relative;
+  padding: 4em 0;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__soc {
+  font-size: 2em;
+}
+.footer__soc .menu-item {
+  margin-right: 0.7em;
+}
+.footer__soc a {
+  opacity: 0.5;
+}
+.footer__soc a:before {
+  display: none;
+}
+.footer__soc a:hover {
+  opacity: 0.8;
+}
+.footer__copy {
+  font-size: 1.125em;
+}
+.footer__terms {
+  font-size: 1.125em;
+}
+.footer__terms a {
+  color: #B3B3B3;
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
+  margin-left: 3em;
+}
+.footer__terms a:hover {
+  -webkit-text-decoration-color: inherit;
+          text-decoration-color: inherit;
+}

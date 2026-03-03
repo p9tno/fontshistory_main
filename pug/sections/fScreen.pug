@@ -1,0 +1,28 @@
+<!-- begin fScreen -->
+    section#fScreen.fScreen.section
+        h1.section__title
+            .before__line
+            span Antique <em>font</em>
+            .after__line
+
+        .fScreen__content
+            .fScreen__map.img
+                img(src="../../img/fScreen/fScreen__map.webp" alt="map")
+                
+            .section__sub
+                p / Journey Through the Ages: Antique / <br> Fonts That Tell Stories
+            .fScreen__img.img
+                img(src="../../img/fScreen/fScreen__img.webp" alt="img")
+
+
+
+            .fScreen__bg
+                each item in [{year: '2020', round: '1'}, {year: '1950', round: '2'}, {year: '1919', round: '3'}, {year: '1817', round: '4'}, {year: '1766', round: '5'}, {year: '1480', round: '6'}, {year: '1930', round: '7'}, {year: '1762', round: '8'}, {year: '1950', round: '9'}, {year: '1957', round: '10'}, {year: '1970', round: '11'}, {year: '1817', round: '12'}, {year: '1817', round: '13'}, {year: '1787', round: '14'}, {year: '1817', round: '15'}, {year: '2024', round: '16'}, ]
+                    .fScreen__point
+                        .fScreen__year=item.year
+                        .fScreen__round
+                            img(src="../../img/fScreen/round_"+item.round+".webp" alt=""+item.year+"" loading="lazy")
+
+
+<!-- end fScreen -->
+
