@@ -192,16 +192,44 @@ function animateAntiqueFontsSection() {
             trigger: section,
             start: 'top 80%',
             end: 'top 20%',
-            scrub: 1,
+            scrub: 3,
+            // markers: true
         },
     });
 
-    // add animations and labels to the timeline
-    tl.from(img, { duration: 3, opacity: 0 })
-        .from(portret, { duration: 3, scale: 1.3, opacity: 0 })
-        .from(pattern, { duration: 3, x: -100, opacity: 0 })
-        .from(autograf, { duration: 3, x: 100, rotation: 10, opacity: 0 })
-        .from(plates, { rotation: 20, y: -20, opacity: 0, stagger: 0.2 });
+    tl.from(img, { 
+        duration: 3, 
+        opacity: 0, 
+        ease: "power2.out"
+    });
+    tl.from(portret, { 
+        duration: 3, 
+        scale: 1.3, 
+        opacity: 0, 
+        ease: "back.out(1.2)" 
+    }, "-=1.5");
+    tl.from(pattern, { 
+        duration: 3, 
+        x: -100, 
+        opacity: 0, 
+        ease: "power1.out" 
+    }, "-=1.5");
+    tl.from(autograf, { 
+        duration: 3, 
+        x: 100, 
+        rotation: 10, 
+        opacity: 0, 
+        ease: "power1.out"
+    }, "+=1.5");
+    tl.from(plates, { 
+        rotation: 20,
+        y: -15,
+        opacity: 0, 
+        stagger: 0.3, 
+        duration: 3,
+        ease: "sine.out"
+    });
+    
 }
 
 function animateDuringSection() {

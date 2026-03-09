@@ -34,6 +34,7 @@
             padding-left: 10.75em;
         }
     }
+    
     &__bg {
         position: absolute;
         top: 0;
@@ -48,6 +49,7 @@
             height: 100%;
         }
     }
+
     &__content {
         position: relative;
         z-index: 1;
@@ -55,11 +57,12 @@
         align-items: center;
         gap: 3.7em;
     }
+
     &__left {
-        // position: relative;
         width: 64.375em;
         flex: none;
     }
+
     &__img {
         margin-top: -9em;
         position: relative;
@@ -71,23 +74,26 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('img/antique-shadow.png') center no-repeat;
+            background: url('../../img/antiqueFonts/shadow.webp') center no-repeat;
             background-size: 70%;
             z-index: -1;
         }
     }
+
     &__pattern {
         position: absolute;
         width: 48.1em;
         top: -2.2em;
         z-index: -1;
     }
+
     &__portret {
         width: 30.5625em;
         margin-left: 9.7em;
         position: relative;
         z-index: 2;
     }
+
     &__autograf {
         position: absolute;
         width: 28.7em;
@@ -95,12 +101,14 @@
         top: 20.4em;
         z-index: 2;
     }
+
     &__plates {
         position: relative;
         z-index: 4;
         margin-top: 1.4em;
         margin-left: 6.5em;
     }
+
     &__plate {
         position: absolute;
         width: 23.5625em;
@@ -111,15 +119,9 @@
             bottom: -1.6em;
         }
     }
+
     &__right {
         padding-top: 9em;
         padding-right: 12.25em;
     }
-    // &__top {
-    //     &:after {
-    //         content: '';
-    //         display: table;
-    //         clear: both;
-    //     }
-    // }
 }
