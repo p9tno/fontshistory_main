@@ -31,18 +31,21 @@ function isTouch() {
     return app.touchDevice();
 } // for touch device
 
-// document.addEventListener('DOMContentLoaded', () => {
-// });
-gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-animateFirstScreenSection();
-animateTableContentSection();
-animateAntiqueFontsSection();
-animateDuringSection();
+document.addEventListener('DOMContentLoaded', () => {
+    initAnimations();
+});
+
+function initAnimations() {
+    gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+    animateFirstScreenSection();
+    animateTableContentSection();
+    animateAntiqueFontsSection();
+    animateDuringSection();
+}
 
 function animateFirstScreenSection() {
-    let tl;
-
+  
     const points = gsap.utils.toArray('.fScreen__point');
     const random = gsap.utils.random([0, 1], true);
     const randomInterval = gsap.utils.random(4, 5, true);
@@ -220,7 +223,7 @@ function animateAntiqueFontsSection() {
         rotation: 10, 
         opacity: 0, 
         ease: "power1.out"
-    }, "+=1.5");
+    }, "+=1");
     tl.from(plates, { 
         rotation: 20,
         y: -15,
@@ -228,7 +231,7 @@ function animateAntiqueFontsSection() {
         stagger: 0.3, 
         duration: 3,
         ease: "sine.out"
-    });
+    }, "+=1");
     
 }
 
@@ -238,7 +241,7 @@ function animateDuringSection() {
     const top = section.querySelector('.section__except');
     const anchore = section.querySelector('.section__anchore');
     const text = section.querySelector('.section__text');
-    const img = gsap.utils.toArray('.during__img');
+    const images = gsap.utils.toArray('.during__img');
 
     const titleChars = getLetterInWrapp(title);
 
@@ -290,19 +293,32 @@ function animateDuringSection() {
             end: 'top 30%',
         },
     });
+
     let tl = gsap.timeline({
         scrollTrigger: {
             trigger: section,
             start: 'top 20%',
             end: 'top -20%',
-            scrub: 1,
+            scrub: 2.5,
             // markers: true,
         },
     });
 
-    const random = gsap.utils.random([-10, 10], true);
 
-    tl.from(img, { duration: 3, scale: 2, opacity: 0, stagger: 0.3, x: random(), y: random(), rotation: random() });
+    tl.from(images, {
+        duration: 1,
+        scale: 2,             
+        opacity: 0,            
+        x: (i) => gsap.utils.random(-15, 15),
+        y: (i) => gsap.utils.random(-15, 15),
+        rotation: (i) => gsap.utils.random(-5, 5),
+        stagger: {
+            amount: 2,
+            from: "random"
+        },
+        ease: "sine.inOut"
+    });
+
 }
 
 function getLetterInWrapp(title) {
