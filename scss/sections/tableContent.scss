@@ -1,8 +1,10 @@
 .tableContent {
+
     @media (min-width: 768px) {
         padding-top: 6em;
         padding-bottom: 7.2em;
     }
+
     .section {
         &__title {
             text-align: center;
@@ -15,18 +17,15 @@
             }
         }
     }
-    .container_center {
-    }
-    &__list {
-        // margin-top: 3.7em;
-    }
+
     &__row {
         position: relative;
         border-top: 1px solid #443e31;
         display: flex;
-        // align-items: center;
         gap: 2.5em;
         padding: 0.2em;
+        z-index: 0;
+
         &:before {
             content: '';
             display: block;
@@ -35,21 +34,10 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('img/table-content-bg.jpg');
+            background-image: url('../img/tableContent/bg.webp');
             opacity: 0;
             transition: opacity 0.8s;
             z-index: -1;
-        }
-
-        &:after {
-            content: '';
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 3;
         }
 
         &:first-child {
@@ -167,17 +155,20 @@
             &:before {
                 opacity: 1;
             }
+
             .tableContent {
+
                 &__text {
                     color: #716a5e;
                 }
+
                 &__img {
-                    // z-index: 1;
-                    z-index: 2;
+                    transition-delay: 0.5s;
                 }
             }
         }
     }
+
     &__name {
         font-weight: 'Mixed';
         font-size: 4.125em;
@@ -185,16 +176,19 @@
         color: #9b8d72;
         line-height: 1.3;
     }
+
     &__text {
         max-width: 18.75em;
         line-height: 1.6;
         transition: color 0.8s;
     }
+
     &__img {
         position: absolute;
         top: 0;
-        z-index: 1;
         transition: transform 0.8s;
         transform: scale(0) translate(-50%, -50%);
+        transition-delay: 0s;
+        pointer-events: none;
     }
 }

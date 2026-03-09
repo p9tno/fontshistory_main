@@ -1544,6 +1544,7 @@ body {
   display: flex;
   gap: 2.5em;
   padding: 0.2em;
+  z-index: 0;
 }
 .tableContent__row:before {
   content: "";
@@ -1553,20 +1554,10 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("img/table-content-bg.jpg");
+  background-image: url("../img/tableContent/bg.webp");
   opacity: 0;
   transition: opacity 0.8s;
   z-index: -1;
-}
-.tableContent__row:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 3;
 }
 .tableContent__row:first-child {
   border-top: 0;
@@ -1639,7 +1630,7 @@ body {
   color: #716a5e;
 }
 .tableContent__row:hover .tableContent__img {
-  z-index: 2;
+  transition-delay: 0.5s;
 }
 .tableContent__name {
   font-weight: "Mixed";
@@ -1656,9 +1647,10 @@ body {
 .tableContent__img {
   position: absolute;
   top: 0;
-  z-index: 1;
   transition: transform 0.8s;
   transform: scale(0) translate(-50%, -50%);
+  transition-delay: 0s;
+  pointer-events: none;
 }
 
 .antiqueFonts {

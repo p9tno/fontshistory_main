@@ -4,11 +4,12 @@ section#tableContent.tableContent.section
         span Table <br> <em>of contents</em>
 
     .tableContent__list
-        .tableContent__row
-            .tableContent__name tableContent__name
-            .tableContent__text tableContent__text
-            .tableContent__img
-                img(src="../img" alt="" loading="lazy")
-
+        each item in [{name: 'I. Introducion', text: '/ The first slab serif typeface, known as “Antique,” was designed by Vincent Figgins in 1817 in London.', img: '1', alt: 'Introducion'}, {name: 'II. Fascinating <em>trivia</em>', text: '/ The first slab serif typeface, known as “Antique,” was designed by Vincent Figgins in 1817 in London.', img: '2', alt: 'Fascinating trivia'}, {name: 'III. Application in Design', text: '/ The first slab serif typeface, known as “Antique,” was designed by Vincent Figgins in 1817 in London.', img: '3', alt: 'Application in Design'}, {name: 'IV. Famous <em>designers</em>', text: '/ The first slab serif typeface, known as “Antique,” was designed by Vincent Figgins in 1817 in London.', img: '4', alt: 'Famous designers'}, {name: 'V. Our Favorites <em>fonts</em>', text: '/ The first slab serif typeface, known as “Antique,” was designed by Vincent Figgins in 1817 in London.', img: '5', alt: 'Our Favorites fonts'}, {name: 'VI. Font pairs', text: '/ The first slab serif typeface, known as “Antique,” was designed by Vincent Figgins in 1817 in London.', img: '6', alt: 'Font pairs'}, ]
+            .tableContent__row
+                .tableContent__name!=item.name
+                .tableContent__text
+                    p=item.text
+                .tableContent__img
+                    img(src="../../img/tableContent/tableContent_"+item.img+".webp" alt=""+item.alt+"" loading="lazy")
 
 <!-- end tableContent -->
