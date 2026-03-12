@@ -1867,6 +1867,7 @@ body {
   position: relative;
   overflow: hidden;
   min-height: 100vh;
+  background: #E1DCD2;
 }
 .spiral__content {
   position: relative;
@@ -1875,14 +1876,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.spiral__text {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-  font-family: "Arial", sans-serif;
-  font-size: 5.1em;
-  color: #9b8d72;
 }
 .spiral__letters {
   position: absolute;
@@ -1897,10 +1890,11 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  font-family: "Arial", sans-serif;
-  font-size: 5.1em;
-  color: #9b8d72;
-  text-transform: uppercase;
+  font-family: "FONTSPRING DEMO - Apparel Display";
+  font-size: 7.5em;
+  line-height: 1.11;
+  letter-spacing: -0.06em;
+  color: #A39273;
   white-space: nowrap;
   transform: translate(-50%, -50%);
   transform-origin: center center;

@@ -365,7 +365,7 @@ function animateSpiralSections() {
         return;
     }
     
-    const originalText = "Fascinating Trivia About Antique Fonts ・ ";
+    const originalText = "Fascinating Trivia About Antique Fonts ・";
     
     // Повторяем 11 раз
     let fullText = '';
@@ -391,42 +391,95 @@ function animateSpiralSections() {
     console.log('Создано букв:', letters.length);
     
     let startTime = Date.now();
+    let lastLogTime = startTime;
     
-    // Параметры
-    const speed = 0.05;
-    const direction = -1;
-    const radiusStart = 30;
-    const radiusGrowth = 25;
-    const spread = 0.12;
+    // Параметры спирали
+    const speed = 0.0125;          // угловая скорость вращения (рад/с)
+    const direction = -1;       // направление вращения (-1 по часовой)
+    const radiusStart = 10;     // начальный радиус в центре (em)
+    const radiusGrowth = 3;     // рост радиуса на радиан (шаг спирали)
+    const spread = 0.1;       // угловой шаг между буквами (для расчёта общего размера)
+    const driftSpeedArc = 1.05;  // скорость движения букв вдоль спирали к центру (em/с) по длине дуги
+    const fadeStart = 10;       // радиус, с которого начинается исчезновение (em)
+    const fadeEnd = 40;         // радиус, на котором буква полностью исчезает (em)
+    
+    // Вспомогательные функции для длины дуги спирали Архимеда
+    function arcLength(theta) {
+        const sqrt = Math.sqrt(theta * theta + 1);
+        return radiusGrowth / 2 * (theta * sqrt + Math.log(theta + sqrt));
+    }
+    
+    function thetaFromArcLength(L) {
+        // Начальное приближение: для малых theta L ≈ radiusGrowth * theta^2 / 2
+        let theta = Math.sqrt(2 * L / radiusGrowth);
+        // Уточняем методом Ньютона (5 итераций достаточно)
+        for (let iter = 0; iter < 10; iter++) {
+            const sqrt = Math.sqrt(theta * theta + 1);
+            const f = radiusGrowth / 2 * (theta * sqrt + Math.log(theta + sqrt)) - L;
+            const df = radiusGrowth * sqrt; // производная dL/dtheta
+            theta -= f / df;
+            if (Math.abs(f) < 1e-6) break;
+        }
+        return theta;
+    }
+    
+    // Вычисляем общую длину дуги для последней буквы при старом распределении
+    // чтобы сохранить общий размер спирали
+    const totalLetters = letters.length;
+    const maxThetaOld = (totalLetters - 1) * spread;
+    const totalArcLength = arcLength(maxThetaOld);
+    const step = totalArcLength / (totalLetters - 1); // желаемое расстояние по дуге между соседними буквами
+    
+    // Предвычисляем начальные длины дуг для каждой буквы
+    const baseLengths = [];
+    for (let i = 0; i < totalLetters; i++) {
+        baseLengths.push(i * step);
+    }
     
     function animate() {
         const elapsed = (Date.now() - startTime) / 1000;
+        const rotationOffset = elapsed * speed * direction;
+        
+        // Отладочный вывод каждую секунду
+        if (Date.now() - lastLogTime > 1000) {
+            // console.log('Анимация работает, elapsed:', elapsed, 'rotationOffset:', rotationOffset);
+            lastLogTime = Date.now();
+        }
         
         letters.forEach((letter, index) => {
-            const offset = index * spread;
+            // Текущая длина дуги с учётом дрейфа
+            let L = baseLengths[index] - driftSpeedArc * elapsed;
+            L = Math.max(L, 0); // не уходим в отрицательную область
             
-            // Угол
-            const angle = elapsed * speed * direction + offset;
+            // Угол, соответствующий этой длине дуги
+            const theta = thetaFromArcLength(L);
+            const angle = theta + rotationOffset;
             
             // Радиус
-            const radius = radiusStart + angle * radiusGrowth;
+            const radius = radiusStart + theta * radiusGrowth;
+
+            // console.log(radius);
+            
             
             // Координаты
             const x = Math.cos(angle) * radius;
             const y = Math.sin(angle) * radius;
             
-            // ПРАВИЛЬНЫЙ ПОВОРОТ ДЛЯ ЧТЕНИЯ:
-            // Буквы должны быть ориентированы по касательной к спирали
-            // Чтобы читать слева направо, добавляем 90 градусов
+            // Поворот буквы по касательной к спирали (поменяли верх/низ)
             const rotation = angle * (180 / Math.PI) + 90;
             
-            // Прозрачность
+            // Прозрачность: исчезновение только в центре
             let opacity = 1;
-            if (radius < 80) opacity = (radius - 30) / 50;
-            if (radius > 600) opacity = Math.max(0, 1 - (radius - 600) / 200);
+            if (L <= 0) {
+                opacity = 0;
+            } else if (radius < fadeEnd) {
+                // Плавное исчезновение между fadeStart и fadeEnd
+                opacity = Math.max(0, (radius - fadeStart) / (fadeEnd - fadeStart));
+            }
+            // На периферии opacity остаётся 1 (исчезновение не нужно)
             
             // Применяем
-            letter.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px)) rotate(${rotation}deg)`;
+            letter.style.transform = `translate(calc(-50% + ${x/16}em), calc(-50% + ${y/16}em)) rotate(${rotation}deg)`;
             letter.style.opacity = opacity;
         });
         
