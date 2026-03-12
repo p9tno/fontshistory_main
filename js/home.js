@@ -42,6 +42,7 @@ function initAnimations() {
     animateTableContentSection();
     animateAntiqueFontsSection();
     animateDuringSection();
+    animateSpiralSections();
 }
 
 function animateFirstScreenSection() {
@@ -301,6 +302,7 @@ function animateDuringSection() {
             end: 'top -20%',
             scrub: 2.5,
             // markers: true,
+            // repeat: -1,
         },
     });
 
@@ -352,3 +354,88 @@ function getLetterInWrapp(title) {
     title.innerHTML = html;
     return title.querySelectorAll('.letter');
 }
+
+function animateSpiralSections() {
+    console.log('Скрипт запущен');
+    
+    const lettersContainer = document.querySelector('.spiral__letters');
+    
+    if (!lettersContainer) {
+        console.error('Контейнер .spiral__letters не найден!');
+        return;
+    }
+    
+    const originalText = "Fascinating Trivia About Antique Fonts ・ ";
+    
+    // Повторяем 11 раз
+    let fullText = '';
+    for (let i = 0; i < 11; i++) {
+        fullText += originalText + ' ';
+    }
+    
+    // Создаем буквы
+    const symbols = fullText.split('');
+    let html = '';
+    
+    symbols.forEach((char, index) => {
+        if (char === ' ') {
+            html += `<span class="spiral__letter" data-index="${index}"> </span>`;
+        } else {
+            html += `<span class="spiral__letter" data-index="${index}">${char}</span>`;
+        }
+    });
+    
+    lettersContainer.innerHTML = html;
+    
+    const letters = document.querySelectorAll('.spiral__letter');
+    console.log('Создано букв:', letters.length);
+    
+    let startTime = Date.now();
+    
+    // Параметры
+    const speed = 0.05;
+    const direction = -1;
+    const radiusStart = 30;
+    const radiusGrowth = 25;
+    const spread = 0.12;
+    
+    function animate() {
+        const elapsed = (Date.now() - startTime) / 1000;
+        
+        letters.forEach((letter, index) => {
+            const offset = index * spread;
+            
+            // Угол
+            const angle = elapsed * speed * direction + offset;
+            
+            // Радиус
+            const radius = radiusStart + angle * radiusGrowth;
+            
+            // Координаты
+            const x = Math.cos(angle) * radius;
+            const y = Math.sin(angle) * radius;
+            
+            // ПРАВИЛЬНЫЙ ПОВОРОТ ДЛЯ ЧТЕНИЯ:
+            // Буквы должны быть ориентированы по касательной к спирали
+            // Чтобы читать слева направо, добавляем 90 градусов
+            const rotation = angle * (180 / Math.PI) + 90;
+            
+            // Прозрачность
+            let opacity = 1;
+            if (radius < 80) opacity = (radius - 30) / 50;
+            if (radius > 600) opacity = Math.max(0, 1 - (radius - 600) / 200);
+            
+            // Применяем
+            letter.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px)) rotate(${rotation}deg)`;
+            letter.style.opacity = opacity;
+        });
+        
+        requestAnimationFrame(animate);
+    }
+    
+    animate();
+}
+
+
+
+

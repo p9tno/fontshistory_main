@@ -1,0 +1,49 @@
+.spiral {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    // background: #000;
+    
+    &__content {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &__text {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+        font-family: 'Arial', sans-serif;
+        font-size: 5.1em;
+        color: #9b8d72;
+    }
+    
+    &__letters {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+    }
+    
+    &__letter {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        font-family: 'Arial', sans-serif;
+        font-size: 5.1em;
+        color: #9b8d72;
+        text-transform: uppercase;
+        white-space: nowrap;
+        transform: translate(-50%, -50%);
+        transform-origin: center center;
+        will-change: transform, opacity;
+        backface-visibility: hidden;
+    }
+}
